@@ -1,0 +1,251 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: gainsboro;
+    color: #333;
+}
+
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    align-content: center;
+    padding: 14px 16px;
+    margin-right: 5%;
+    margin-left: auto;
+}
+
+header {
+    background: goldenrod;
+    color: #fff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #FFD700 3px solid;
+    font-size: medium;
+
+}
+
+
+header .logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #555;
+    color: white;
+    padding: 10px;
+    border-radius: 50px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    margin-left: 2px;
+    align-items: center;
+}
+
+header h1 {
+    float: left;
+    margin-top: 50px;
+    margin-bottom: 5px;
+    margin-left: 9px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+
+}
+
+
+nav {
+    background-color: goldenrod;
+    padding: 2px;
+    border-radius: 5px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: small;
+    margin-left: 0;
+    display: flex;
+}
+
+nav ul li {
+    display: inline;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 4px;
+    transition: all 0.3s ease;
+    border-radius: 3px;
+
+}
+
+nav ul li a:hover {
+    background-color: #555;
+
+}
+
+header h1 {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.documents {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+}
+
+.document {
+    margin: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background-color: white;
+    padding: 10px;
+    width: 200px;
+    transition: transform 0.2s;
+    cursor: pointer;
+    border-radius: 5px;
+
+}
+
+.document img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+    border-radius: 5px;
+
+}
+
+.document p {
+    margin: 0;
+    padding: 5px 0;
+}
+
+.document a {
+    display: inline-block;
+    margin-top: 5px;
+    padding: 5px 10px;
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.2s;
+}
+
+.document a:hover {
+    background-color: #218838;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 90%;
+    max-height: 80%;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#modalCaption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+}
+
+
+@media only screen and (max-width : 768px) {
+    .container {
+        width: 100%;
+        padding: 0px 0px;
+
+    }
+
+    nav {
+        float: left;
+        margin-top: -10px;
+        margin-left: 3px;
+    }
+
+    nav ul li {
+        margin-left: 2px;
+    }
+
+    header {
+        padding-top: 10px;
+    }
+
+    header .logo {
+        display: none;
+    }
+
+    header h1 {
+        margin-top: 0;
+        margin-left: 95px;
+        font-size: 21px;
+    }
+
+    header a {
+        font-size: 9px;
+    }
+
+    .section {
+        margin: 20px 0;
+        margin-left: 5px;
+    }
+
+    .section h2 {
+        padding-top: 3px;
+        margin-left: 8px;
+    }
+
+
+}

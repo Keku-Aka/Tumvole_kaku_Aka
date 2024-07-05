@@ -1,0 +1,146 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: gainsboro;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background: goldenrod;
+    color: #fff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #FFD700 3px solid;
+}
+
+header h1 {
+    float: left;
+    margin-top: 0;
+    margin-left: 0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+
+nav {
+    background-color: goldenrod;
+    padding: 2px;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-left: 7px;
+    margin-right: 6px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: small;
+    margin-left: 0;
+    display: flex;
+}
+
+nav ul li {
+    display: inline;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 4px;
+    transition: all 0.3s ease;
+    border-radius: 3px;
+
+}
+
+nav ul li a:hover {
+    background-color: #555;
+
+}
+
+
+/* Section styles */
+.section {
+    margin: 20px 0;
+}
+
+.section h2 {
+    clear: both;
+    padding-top: 20px;
+}
+
+footer {
+    background: goldenrod;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+
+footer p {
+    margin: 0;
+}
+
+
+@media only screen and (max-width : 768px) {
+    .container {
+        width: 100%;
+        padding: 0px 0px;
+
+    }
+
+    nav {
+        float: left;
+        margin-top: -10px;
+        margin-left: 3px;
+    }
+
+    nav ul li {
+        margin-left: 2px;
+    }
+
+    header {
+        padding-top: 10px;
+    }
+
+    header .logo {
+        display: none;
+    }
+
+    header h1 {
+        margin-top: 0;
+        margin-left: 95px;
+        font-size: 21px;
+    }
+
+    header a {
+        font-size: 9px;
+    }
+
+    .section {
+        margin: 20px 0;
+        margin-left: 5px;
+    }
+
+    .section h2 {
+        padding-top: 3px;
+        margin-left: 8px;
+    }
+
+
+}

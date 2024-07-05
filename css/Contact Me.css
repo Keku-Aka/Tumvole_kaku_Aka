@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: gainsboro;
+    color: #333;
+}
+.navcontainer{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+nav {
+    background-color: goldenrod;
+    padding: 2px;
+    border-radius: 5px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: small;
+   margin-left: 5px;
+   margin-bottom: 3px;
+}
+
+nav ul li {
+    display: inline;
+    
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+    
+}
+
+nav ul li a:hover {
+    background-color: #555;
+   
+}
+
+header {
+    background-color: goldenrod;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+h1 {
+    margin: 0;
+    margin-bottom: 5px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+input[type="submit"], input[type="reset"], button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+input[type="submit"]:hover, input[type="reset"]:hover, button:hover {
+    background-color: #555;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer {
+    background: goldenrod;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+}
+

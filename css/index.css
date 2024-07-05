@@ -1,0 +1,163 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: gainsboro;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    align-content: center;
+    padding: 14px 16px;
+    
+}
+
+header {
+    background: goldenrod;
+    color: #fff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #FFD700 3px solid;
+    font-size: medium;
+    
+}
+
+.indexnum {
+    margin-left: 100px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+header .logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #555;
+    color: white;
+    padding: 10px;
+    border-radius: 50px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1 {
+    float: left;
+    margin-top: 0;
+    margin-left: 98px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+nav {
+    float: right;
+    margin-top: 10px;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-top: -10px;
+    margin-left: 2px;
+}
+
+nav ul li {
+    display: inline;
+    
+}
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 13px;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+    
+}
+nav ul li a:hover {
+    background-color: #555;
+
+}
+
+/* Slider styles */
+.slider {
+    width: 900px;
+    height: 800px;
+    position: relative;
+    overflow: hidden;
+    margin: 30px 0;
+    border-radius: 8px;
+}
+
+.slider img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    transition: left 0.5s ease-in-out;
+}
+
+.slider img.active {
+    left: 0;
+}
+
+.slider img.inactive {
+    left: -100%;
+}
+
+/* Section styles */
+.section {
+    margin: 10px 5px;
+    
+}
+
+.section img {
+    float: left;
+    margin-right: 20px;
+    width: 150px;
+    height: 150px;
+}
+
+.section h2 {
+    clear: both;
+    padding-top: 20px;
+}
+
+.testimonials img {
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+    float: left;
+    margin-right: 10px;
+}
+
+footer {
+    background: goldenrod;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+}
+
+.sc {
+    border-radius: 10px;
+}
+
